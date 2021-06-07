@@ -12,17 +12,12 @@ export default function Instructions({ state }: InstructionProps) {
   <div>
       { state.matches('initial') && (
       <>
-        <div>
-            This quiz is built with XState, React and Vite. Click start to
-            begin.
-        </div>
+        This quiz is built with XState, React and Vite. Click start to begin.
       </>
     )}
       { state.matches('finish') && (
         <>
-          <div>
-            Congratulations! You finished.
-          </div>
+          Congratulations! You finished.
         </>
       )}
     </div>

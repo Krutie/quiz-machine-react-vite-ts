@@ -1,6 +1,6 @@
 /* eslint-disable */
 import { createMachine, assign, DoneInvokeEvent } from "xstate";
-import { QuizContext, QuizState, QuizEvent, Answer } from "../types/";
+import { QuizContext, QuizState, QuizEvent, Answer } from "../Types/";
 
 /**
  * Validate answer
