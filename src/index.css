@@ -1,0 +1,150 @@
+body {
+  background: #a9deea;
+}
+#root {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/* XSTATE */
+iframe {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Project title */
+h1, h2 {
+  margin: 5px;
+}
+
+h1 { font-size: 25px; }
+
+h2 { font-size: 20px; }
+
+/* QUIZ CARD */
+.box {
+  background: #eee;
+  height: 335px;
+  width: 230px;
+  margin: 0 0 20px 0;
+  position: relative;
+  left: calc(50% - 230px / 2);
+  border-radius: 25px;
+  overflow: hidden;
+  /* laying out elements evenly in vertical space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* QUIZ QUESTION */
+.question {
+  display: block;
+  padding: 0 10px 25px 10px;
+  text-align: left;
+}
+
+input[type="radio"] {
+  display: inline-block;
+}
+label {
+  font-weight: bold;
+  cursor: pointer;
+}
+.disabled-label {
+  color: lightslategray;
+}
+
+/* QUIZ ACTIONS */
+.action {
+  background: #a27ae8;
+  padding: 10px 0;
+}
+button {
+  cursor: pointer;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 10px 5px;
+  opacity: 0.75;
+  box-shadow: 2px 2px 1px 1px #000000;
+  width: max-content;
+  font-size: calc(10px + 0.8vmin) !important;
+}
+button:hover {
+  opacity: 1;
+  transition: background 0.25s;
+  box-shadow: 1px 1px 0px 0px #000000;
+}
+
+/* EMOJI FEEDBACK */
+.feedback {
+  padding-top: 10px; position: relative; transform: translate(-50%, 0); left: 50%;
+}
+.emoji {
+  font-size: 60px;
+  display: inline-block;
+}
+
+/* SCORE COUNTS */
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.count {
+  padding: 5px;
+  background: white;
+  width: 50px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 10px 20px;
+  border: 2px solid #a27ae8;
+}
+.count.correct {
+  color: #50b97e;
+}
+.count.skipped {
+  color: lightslategray;
+}
+.count.incorrect {
+  color: #ff7043;
+}
+
+/* END OF QUIZ */
+.finish {
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+code {
+  line-height: 3;
+}
+
+/* IFRAME */
+iframe {
+  height: 65vh;
+  width: 100%;
+  display: block;
+}
+@media only screen and (orientation: portrait) {
+  iframe {
+    display: none;
+  }
+}
+
+/* Transition: fade */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
