@@ -13,8 +13,8 @@ export default function Instructions({ state }: InstructionProps) {
       { state.matches('initial') && (
       <>
         <div>
-            There are total three questions in this quiz. You can choose to answer or
-            skip. Skipped question will be marked as an incorrect answer.
+            This quiz is built with XState, React and Vite. Click start to
+            begin.
         </div>
       </>
     )}
