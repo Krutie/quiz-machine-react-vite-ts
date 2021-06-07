@@ -27,6 +27,11 @@ function App() {
     <div className="App">
       <h1>Quiz Machine</h1>
       <h2>Vite + React + TypeScript</h2>
+      <span>
+        <a href="https://github.com/Krutie/quiz-machine-react-vite-ts" target="_blank"> Github </a> |
+        <a href="https://codesandbox.io/s/myjwf" target="_blank"> CodeSandbox </a> |
+        <a href="https://quiz-machine-react.surge.sh" target="_blank"> Surge </a>
+      </span>
       <code> State: {JSON.stringify(state.value)} </code>
     <div className="box">
       <Feedback state={state} />

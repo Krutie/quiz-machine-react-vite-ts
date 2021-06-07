@@ -127,6 +127,7 @@ button:hover {
 
 code {
   line-height: 3;
+  display: block;
 }
 
 /* IFRAME */
